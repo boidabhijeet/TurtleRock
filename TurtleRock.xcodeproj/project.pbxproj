@@ -18,6 +18,8 @@
 		043F409A270F2C1600642401 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F4099270F2C1600642401 /* Landmark.swift */; };
 		043F409D270F2D6B00642401 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F409C270F2D6B00642401 /* ModelData.swift */; };
 		043F409F270F2E5700642401 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F409E270F2E5700642401 /* LandmarkRow.swift */; };
+		188F8B552714358E007A0C4D /* LandmarkLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F8B542714358E007A0C4D /* LandmarkLists.swift */; };
+		188F8B58271437D4007A0C4D /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 188F8B57271437D4007A0C4D /* landmarkData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,9 @@
 		043F4099270F2C1600642401 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		043F409C270F2D6B00642401 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		043F409E270F2E5700642401 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		188F8B542714358E007A0C4D /* LandmarkLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkLists.swift; sourceTree = "<group>"; };
+		188F8B57271437D4007A0C4D /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData.json; path = ../../BuildingListsAndNavigation/Resources/landmarkData.json; sourceTree = "<group>"; };
+		188F8B5B271437DB007A0C4D /* landmarkData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +74,8 @@
 				043F4097270F2BD900642401 /* App Files */,
 				043F409B270F2C1C00642401 /* Model */,
 				043F4098270F2BEA00642401 /* View */,
+				188F8B5A271437DB007A0C4D /* Resources */,
+				188F8B57271437D4007A0C4D /* landmarkData.json */,
 				043F4085270F1D1C00642401 /* Assets.xcassets */,
 				043F408A270F1D1C00642401 /* LaunchScreen.storyboard */,
 				043F408D270F1D1C00642401 /* Info.plist */,
@@ -97,6 +104,7 @@
 		043F4098270F2BEA00642401 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				188F8B542714358E007A0C4D /* LandmarkLists.swift */,
 				043F4083270F1D1900642401 /* ContentView.swift */,
 				043F4093270F24C100642401 /* CircleImage.swift */,
 				043F4095270F260300642401 /* MapView.swift */,
@@ -112,6 +120,14 @@
 				043F409C270F2D6B00642401 /* ModelData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		188F8B5A271437DB007A0C4D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				188F8B5B271437DB007A0C4D /* landmarkData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				043F408C270F1D1C00642401 /* LaunchScreen.storyboard in Resources */,
+				188F8B58271437D4007A0C4D /* landmarkData.json in Resources */,
 				043F4089270F1D1C00642401 /* Preview Assets.xcassets in Resources */,
 				043F4086270F1D1C00642401 /* Assets.xcassets in Resources */,
 			);
@@ -191,6 +208,7 @@
 				043F4084270F1D1900642401 /* ContentView.swift in Sources */,
 				043F409A270F2C1600642401 /* Landmark.swift in Sources */,
 				043F409F270F2E5700642401 /* LandmarkRow.swift in Sources */,
+				188F8B552714358E007A0C4D /* LandmarkLists.swift in Sources */,
 				043F409D270F2D6B00642401 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +353,7 @@
 				DEVELOPMENT_TEAM = 24XFNJTF4T;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TurtleRock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +375,7 @@
 				DEVELOPMENT_TEAM = 24XFNJTF4T;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TurtleRock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

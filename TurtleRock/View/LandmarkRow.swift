@@ -9,14 +9,16 @@ import SwiftUI
 
 struct LandmarkRow: View {
    
-    var landmarks: Landmark
+    var landmark: Landmark
     
     var body: some View {
         HStack {
-            landmarks.image
+            Image(landmark.imageName)
                 .resizable()
                 .frame(width: 50, height: 50)
-            Text(landmarks.name)
+            Text(landmark.name)
+            
+            Spacer()
         }
     }
 }
